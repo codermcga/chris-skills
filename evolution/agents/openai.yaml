@@ -1,7 +1,7 @@
 interface:
   display_name: "evolution"
-  short_description: "手动复盘上次调用后的相关工作，精简并优化其他 skill 或项目"
-  default_prompt: "使用 $evolution 复盘上次调用之后、围绕当前目标的多段相关工作，在已有授权范围内优化相关 skill 或项目，保持改动简洁、必要且可复用。"
+  short_description: "手动复盘相关工作，先提进化方案供评估，确认后再修改 skill 或项目"
+  default_prompt: "使用 $evolution 复盘上次调用之后围绕当前目标的相关工作，先给出进化方案并等待用户评估同意后再修改；用户明确要求直接修改时，在约定范围内落实。"
 
 policy:
   allow_implicit_invocation: false
