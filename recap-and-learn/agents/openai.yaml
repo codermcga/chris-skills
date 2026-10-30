@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recap and Learn"
+  short_description: "每轮最终回复附简短小结与相关知识点，清楚交代结果、验证边界并帮助学习"
+  default_prompt: "使用 $recap-and-learn，在本轮回复末尾附简短的本轮小结和1～2个相关知识点。"

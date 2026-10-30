@@ -1,0 +1,6 @@
+{
+  "skills_dir": "~/.claude/skills",
+  "rules_file": "~/.claude/CLAUDE.md",
+  "project_skills_dir": ".claude/skills",
+  "project_rules_file": "CLAUDE.md"
+}

@@ -1,0 +1,5 @@
+{
+  "project_skills_dir": ".trae/skills",
+  "project_rules_file": ".trae/rules/chris-skills.md",
+  "rules_preamble": "---\nalwaysApply: true\n---\n\n"
+}
