@@ -19,7 +19,7 @@
 | 目录 | 用途 | 使用方式 |
 | --- | --- | --- |
 | [evolution/](evolution/SKILL.md) | 复盘相关工作，依据证据提出 Skill 或项目改进方案 | 仅手动调用；默认先给方案供用户评估 |
-| [recap-and-learn/](recap-and-learn/SKILL.md) | 每轮最终回复附简短小结与1～2个相关知识点 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
+| [recap-and-learn/](recap-and-learn/SKILL.md) | 每轮最终回复附简短小结与1～2个知识点，以简明原理优先解释新概念，帮助边工作边学习 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
 
 ## 目录职责
 
