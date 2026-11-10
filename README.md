@@ -6,20 +6,20 @@
 
 | 内容类型 | 来源 | 如何使用 |
 | --- | --- | --- |
-| 常驻提示词 | `recap-and-learn/SKILL.md` 的 YAML 头之后的 Markdown 正文 | 合并到当前 Agent 的用户级常驻指令中，让每轮最终回复附小结与知识点 |
+| 常驻提示词 | `recap-and-learn/SKILL.md` 的 YAML 头之后的 Markdown 正文 | 合并到当前 Agent 的用户级常驻指令中，在最终回复开头提供 Summary，末尾提供 Tips |
 | 全局 Skill | `evolution/`、`recap-and-learn/` 完整目录 | 放入当前 Agent 支持的用户级 Skill 加载位置，供跨项目使用 |
 | 仓库说明 | 本页、`AGENTS.md` 和 `docs/usage.md` | 供接手仓库的 Agent 理解结构、接入与维护方式，不作为全局工作规则复制 |
 
 这里的“常驻提示词”对应你希望长期生效的个人规则，有时也被称为“系统提示词”；实际接入使用 Agent 提供的用户指令／规则机制，不修改产品内部的系统提示词。
 
-同一份收尾规则复用 `recap-and-learn/SKILL.md` 正文，不维护第二份副本。只需要每轮收尾时，接入常驻提示词即可；也希望保留按需调用入口时，再把它作为全局 Skill 接入。
+同一份回复格式规则复用 `recap-and-learn/SKILL.md` 正文，不维护第二份副本。需要每轮应用时，接入常驻提示词即可；也希望保留按需调用入口时，再把它作为全局 Skill 接入。
 
 ## 现有能力
 
 | 目录 | 用途 | 使用方式 |
 | --- | --- | --- |
 | [evolution/](evolution/SKILL.md) | 复盘相关工作，依据证据提出 Skill 或项目改进方案 | 仅手动调用；默认先给方案供用户评估 |
-| [recap-and-learn/](recap-and-learn/SKILL.md) | 每轮最终回复附简短小结与1～2个知识点，以简明原理优先解释新概念，帮助边工作边学习 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
+| [recap-and-learn/](recap-and-learn/SKILL.md) | 开头用 Summary 交代结果、验证边界及必要的后续决策，末尾用无序列表 Tips 解释 1～2 个知识点；采用基础 Markdown，并在不支持时降级为纯文本 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
 
 ## 目录职责
 
@@ -36,7 +36,7 @@
 
 可以直接把下面这段话发给新的 Agent：
 
-> 请读取 https://github.com/codermcga/chris-skills 的 README.md 和 docs/usage.md，理解哪些是常驻提示词、哪些是全局 Skill，再按你所在 Agent 和环境的加载机制接入。启用每轮回复的小结与知识点，保留其他已有配置，并说明实际接入位置和验证情况。如果已经接入过，就对比仓库最新内容更新，不要重复追加。
+> 请读取 https://github.com/codermcga/chris-skills 的 README.md 和 docs/usage.md，理解哪些是常驻提示词、哪些是全局 Skill，再按你所在 Agent 和环境的加载机制接入。启用每轮回复开头的 Summary 和末尾的无序列表 Tips，保留其他已有配置，并说明实际接入位置和验证情况。如果已经接入过，就对比仓库最新内容更新，不要重复追加。
 
 SSH 地址是 `git@github.com:codermcga/chris-skills.git`；新机器没有配置 GitHub SSH 时，可以使用上面的 HTTPS 地址克隆，无需为读取公开仓库配置密钥。
 
