@@ -1,4 +1,4 @@
 interface:
   display_name: "Summary and Tips"
-  short_description: "回复开头用 Summary 支持快速决策，末尾用分点 Tips 解释相关原理"
-  default_prompt: "使用 $recap-and-learn，在本轮回复开头提供便于快速决策的 Summary，末尾用无序列表提供 1～2 个 Tips，并采用兼容性较好的基础 Markdown 格式。"
+  short_description: "完整回答后追加 Summary 和无序列表 Tips，兼顾快速决策与原理学习"
+  default_prompt: "使用 $recap-and-learn，先完整回答本轮问题，再在末尾依次追加便于快速决策的 Summary 和无序列表形式的 1～2 个 Tips，并采用兼容性较好的基础 Markdown 格式。"
