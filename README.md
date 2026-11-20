@@ -19,7 +19,7 @@
 | 目录 | 用途 | 使用方式 |
 | --- | --- | --- |
 | [evolution/](evolution/SKILL.md) | 复盘相关工作，依据证据提出 Skill 或项目改进方案 | 仅手动调用；默认先给方案供用户评估 |
-| [recap-and-learn/](recap-and-learn/SKILL.md) | 完整回答后依次追加 Summary 决策摘要与无序列表 Tips，不削弱正文内容；Tips 解释 1～2 个知识点；采用基础 Markdown，并在不支持时降级为纯文本 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
+| [recap-and-learn/](recap-and-learn/SKILL.md) | 完整回答后追加 2～3 条结论式 Summary 和默认 1 个知识点的 Tips，不削弱正文内容；Summary 不使用分类标签；采用基础 Markdown，并在不支持时降级为纯文本 | 正文可作为常驻提示词，也可作为 Skill 按需调用 |
 
 ## 目录职责
 
